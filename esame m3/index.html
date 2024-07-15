@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container-navbar">
+            <div class="funciotn-1">
+                <ul>
+                    <li><img id="logo" src="assets/imgs/Netflix_Logo_RGB.png"></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">TV Show</a></li>
+                    <li><a href="">Movies</a></li>
+                    <li><a href="">Recently Added</a></li>
+                    <li><a href="">My List</a></li>
+                </ul>
+            </div>
+            <div class="funciotn-2">
+                <ul>
+                    <li><img id="search" src="assets/imgs/icon search.png"></li>
+                    <li>kids</li>
+                    <li><img id="bell" src="assets/imgs/icons8-bell-24.png"></li>
+                    <li id="color"></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="select">
+        <div class="menu">
+            <h2>TV Shows</h2>
+            <div class="dropdown">
+                <button onclick="mobileMenuOpen()" class="dropbtn">Genres</button>
+                <ul id="gmDropdown" class="dropdown-content">
+                    <li><a href="#genres">Horror</a></li>
+                    <li><a href="#genres">Romantic</a></li>
+                    <li><a href="#genres">Dramatic</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="carousel-wrap">
+            <h3>Trending Now</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="assets/imgs/movies/1.png"></div>
+                <div class="item"><img src="assets/imgs/movies/2.png"></div>
+                <div class="item"><img src="assets/imgs/movies/3.png"></div>
+                <div class="item"><img src="assets/imgs/movies/4.png"></div>
+                <div class="item"><img src="assets/imgs/movies/5.png"></div>
+                <div class="item"><img src="assets/imgs/movies/6.png"></div>
+            </div>
+        </div>
+        <div class="carousel-wrap">
+            <h3>Watch It Again</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="assets/imgs/movies/7.png"></div>
+                <div class="item"><img src="assets/imgs/movies/8.png"></div>
+                <div class="item"><img src="assets/imgs/movies/9.png"></div>
+                <div class="item"><img src="assets/imgs/movies/10.png"></div>
+                <div class="item"><img src="assets/imgs/movies/11.png"></div>
+                <div class="item"><img src="assets/imgs/movies/12.png"></div>
+            </div>
+        </div>
+        <div class="carousel-wrap">
+            <h3>New Releases</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="assets/imgs/movies/13.png"></div>
+                <div class="item"><img src="assets/imgs/movies/14.png"></div>
+                <div class="item"><img src="assets/imgs/movies/15.png"></div>
+                <div class="item"><img src="assets/imgs/movies/16.png"></div>
+                <div class="item"><img src="assets/imgs/movies/17.png"></div>
+                <div class="item"><img src="assets/imgs/movies/18.png"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container-icon">
+            <img id="facebook" src="icon/icons8-facebook-50.png">
+            <img id="instagram" src="icon/icons8-instagram-50.png">
+            <img id="twitter" src="icon/icons8-twitter-50.png">
+            <img id="youtube" src="icon/icons8-youtube-50.png">
+        </div>
+        <br>
+        <div class="container-footer">
+            <div class="column-1">
+                <ul>
+                    <li>Audio and Subtitles</li>
+                    <li>Media Center</li>
+                    <li>Privacy</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="column-2">
+                <ul>
+                    <li>Audio Description</li>
+                    <li>Investion Relations</li>
+                    <li>Legal Notices</li>
+                </ul>
+            </div>
+            <div class="column-3">
+                <ul>
+                    <li>Help Center</li>
+                    <li>Jobs</li>
+                    <li>Cookie Preferences</li>
+                </ul>
+            </div>
+            <div class="column-4">
+                <ul>
+                    <li>Gift Cards</li>
+                    <li>Terms of Use</li>
+                    <li>Corporate Information</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-button">
+            <button>Service Code</button>
+        </div>
+        <br>
+        <div class="generic-netflix">
+            <p>1997 - 2019 Netflix, inc. {dygcuwyceyusdvcuwy}</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+body {
+    background-color: #141414;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER / NAV-BAR */
+
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+}
+
+.funciotn-1 ul,
+.funciotn-2 ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.funciotn-1 ul li,
+.funciotn-2 ul li {
+    margin-right: 20px;
+}
+
+.funciotn-2 ul li:last-child {
+    margin-right: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+}
+
+#search {
+    width: 20px;
+    height: auto;
+}
+
+#color {
+    height: 25px;
+    width: 25px;
+    background-color: aqua;
+}
+
+@media (max-width: 768px) {
+    .container-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .funciotn-1 ul,
+    .funciotn-2 ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .funciotn-1 ul li,
+    .funciotn-2 ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #logo {
+        width: 80px;
+    }
+
+    #search {
+        width: 15px;
+    }
+}
+
+/* MAIN */
+h3 {
+    color: white;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+.menu h2 {
+    margin: 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #141414;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #141414;
+    width: 100%;
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 0;
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.carousel-wrap {
+    margin: 10px auto;
+    padding: 0 5%;
+    width: 80%;
+    position: relative;
+}
+
+.owl-carousel .item {
+    position: relative;
+    z-index: 100;
+}
+
+.owl-nav>div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+}
+
+.owl-nav i {
+    font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+    left: -30px;
+}
+
+.owl-nav .owl-next {
+    right: -30px;
+}
+
+/* FOOTER */
+.footer {
+    margin: 0 auto;
+    padding: 0 5%;
+    width: 80%;
+    height: auto;
+}
+
+.container-icon {
+    display: flex;
+}
+
+#facebook,
+#instagram,
+#twitter,
+#youtube {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+
+#facebook {
+    margin-left: 125px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.column-1,
+.column-2,
+.column-3,
+.column-4 {
+    margin-right: 100px;
+}
+
+.column-4 {
+    margin-right: 0px;
+}
+
+.column-1 ul,
+.column-2 ul,
+.column-3 ul,
+.column-4 ul {
+    list-style: none;
+}
+
+.column-1 li,
+.column-2 li,
+.column-3 li,
+.column-4 li {
+    margin-bottom: 20px;
+}
+
+.container-button,
+.generic-netflix {
+    margin-left: 125px;
+    color: white;
+}
+
+.container-button button {
+    background-color: #141414;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+}
+
+.container-button {
+    margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+    .container-icon {
+        align-items: flex-start;
+    }
+
+    #facebook,
+    #instagram,
+    #twitter,
+    #youtube {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .column-1,
+    .column-2,
+    .column-3,
+    .column-4 {
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .container-button,
+    .generic-netflix {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .container-button button {
+        padding: 8px 12px;
+    }
+}
